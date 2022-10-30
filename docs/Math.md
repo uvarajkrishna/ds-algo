@@ -12,7 +12,7 @@
 **Tips -** Divide Number by 10 until it is equal to zero. Number of times divided will lead to
 number of digits.
 
-[CountDigits.java](../src/main/java/com/math/CountDigits.java)
+**Solution** - [CountDigits.java](../src/main/java/com/math/CountDigits.java)
 
 ```java
   private static int countOfDigitsIn(int number) {
@@ -35,19 +35,20 @@ number of digits.
 |   111 |    True |
 |  1221 |    True |
 
-**Tips -** Use divide by 10 approach. But this time use temp variable to store right most number 
+**Tips -** Use divide by 10 approach. But this time use temp variable to store right most number
 sliced using modulo of ten.
 
-[Palindrome.java](../src/main/java/com/math/Palindrome.java)
+**Solution** - [Palindrome.java](../src/main/java/com/math/Palindrome.java)
+
 ```java
-  public static boolean isPalindrome(int number) {
-    if (number < 0) {
-      return false;
+  public static boolean isPalindrome(int number){
+    if(number< 0){
+    return false;
     }
-    if (number < 10) {
-      return true;
+    if(number< 10){
+    return true;
     }
-    int reversedNumber = 0;
+    int reversedNumber=0;
     int originalNumber=number;
     while(number>0){
     reversedNumber=reversedNumber*10+number%10;
@@ -67,6 +68,8 @@ sliced using modulo of ten.
 |     6 |  1 x 2 x 3 x 4 x 5 x 6 |     720 |
 |    10 | 1x 2 x 3. . . x 9 x 10 | 3628800 |
 
+**Solution** - [Factorial.java](../src/main/java/com/math/Factorial.java)
+
 **Iterative Approach**
 
 ```java
@@ -85,8 +88,6 @@ sliced using modulo of ten.
 |      θ(N)       |             θ(1)             |
 
 **Recursive Approach**
-
-Time Complexity - θ(N), Auxilary Space Complexity - θ(1)
 
 ```java
   private static int factorialThroughRecursion(int number){
