@@ -4,12 +4,30 @@
 
 **Problem -** Count the number of digits in a given number.
 
-**Tips -** Divide Number by zero until it is equal to zero. Number of time divided will lead to 
+|  Input |  Output |
+|-------:|--------:|
+|  12345 |       5 |
+|    111 |       3 |
+
+**Tips -** Divide Number by 10 until it is equal to zero. Number of times divided will lead to
 number of digits.
 
 https://github.com/uvarajkrishna/ds-algo/blob/67bd77e5762e2e5befbf58314e8a2b43f2a856be/src/main/java/com/math/CountDigits.java#L13-L20
 
 ## Palindrome Numbers
+
+**Problem -** Check whether the given number is palindrome.
+
+| Input |  Output |
+|------:|--------:|
+| 12345 |   False |
+|   111 |    True |
+|  1221 |    True |
+
+**Tips -** Use divide by 10 approach. But this time use temp variable to store right most number 
+sliced using modulo of ten.
+
+https://github.com/uvarajkrishna/ds-algo/blob/222cbec2851537aad3f358a506730976eac6b19c/src/main/java/com/math/Palindrome.java#L16-L30
 
 ## Factorial of a Number
 
