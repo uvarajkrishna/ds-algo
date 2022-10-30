@@ -13,4 +13,5 @@
 11. [Computing Power](computing-power.md)
 12. [Iterative Power](iterative-power.md)
 
+___
 * [DS Algo Home](../../README.md)

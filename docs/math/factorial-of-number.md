@@ -46,5 +46,7 @@ Find factorial of the given number.
 |:---------------:|:--------------------------:|
 |      θ(N)       |            θ(N)            |
 
+___
+
 * [Math - Home](math.md)
 * [DS Algo Home](../../README.md)
