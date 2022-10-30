@@ -28,3 +28,5 @@ number of digits.
     return count;
     }
 ```
+* [Math - Home](math.md)
+* [DS Algo Home](../../README.md)

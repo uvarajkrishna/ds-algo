@@ -45,3 +45,6 @@ Find factorial of the given number.
 | Time Complexity | Auxiliary Space Complexity |
 |:---------------:|:--------------------------:|
 |      θ(N)       |            θ(N)            |
+
+* [Math - Home](math.md)
+* [DS Algo Home](../../README.md)

@@ -12,3 +12,5 @@
 10. [Sieve of Eratosthenes](sieve-of-eratosthenes.md)
 11. [Computing Power](computing-power.md)
 12. [Iterative Power](iterative-power.md)
+
+* [DS Algo Home](../../README.md)

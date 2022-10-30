@@ -36,3 +36,5 @@ sliced using modulo of ten.
     return originalNumber==reversedNumber;
     }
 ```
+* [Math - Home](math.md)
+* [DS Algo Home](../../README.md)
