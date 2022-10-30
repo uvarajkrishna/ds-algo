@@ -1,17 +1,16 @@
-package selfpaced.commonmath;
+package com.math;
 
-import org.junit.Assert;
 
+import static org.assertj.core.api.Assertions.assertThat;
 @SuppressWarnings({"java:S5960", "java:S106"})
 public class CountDigits {
 
   public static void main(String[] args) {
-    Assert.assertEquals(5, countDigits(12345));
-    Assert.assertEquals(1, countDigits(1));
-    Assert.assertEquals(3, countDigits(-100));
+    assertThat(countOfDigitsIn(12345)).isEqualTo(5);
+    assertThat(countOfDigitsIn(1)).isEqualTo(1);
   }
 
-  private static int countDigits(int number) {
+  private static int countOfDigitsIn(int number) {
     int count = 0;
     while (number != 0) {
       number = number / 10;
@@ -19,4 +18,5 @@ public class CountDigits {
     }
     return count;
   }
+
 }

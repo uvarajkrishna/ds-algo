@@ -1,4 +1,4 @@
-package selfpaced.commonmath;
+package com.math;
 
 @SuppressWarnings({"java:S5960", "java:S106"})
 public class Palindrome {

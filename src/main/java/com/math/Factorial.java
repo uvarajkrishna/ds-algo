@@ -1,19 +1,17 @@
-package selfpaced.commonmath;
-
-import static org.junit.Assert.assertEquals;
+package com.math;
 
 @SuppressWarnings({"java:S5960", "java:S106"})
 public class Factorial {
 
   public static void main(String[] args) {
-    assertEquals(24, factorialIterative(4));
-    assertEquals(720, factorialIterative(6));
-    assertEquals(1, factorialIterative(0));
+    assert factorialIterative(4) == 24;
+    assert factorialIterative(6) == 720;
+    assert factorialIterative(0) == 0;
 
-    assertEquals(24, factorialRecursive(4));
-    assertEquals(720, factorialRecursive(6));
-    assertEquals(1, factorialRecursive(0));
-    assertEquals(1, factorialRecursive(1));
+    assert factorialRecursive(4) == 24;
+    assert factorialRecursive(6) == 720;
+    assert factorialRecursive(0) == 1;
+    assert factorialRecursive(1) == 1;
   }
 
   private static int factorialIterative(final int number) {

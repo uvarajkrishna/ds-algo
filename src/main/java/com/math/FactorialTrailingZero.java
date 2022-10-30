@@ -1,17 +1,15 @@
-package selfpaced.commonmath;
-
-import static org.junit.Assert.assertEquals;
+package com.math;
 
 @SuppressWarnings({"java:S5960", "java:S106"})
 public class FactorialTrailingZero {
 
   public static void main(String[] args) {
-    assertEquals(1, loopMethod(5));
-    assertEquals(2, loopMethod(10));
+    assert loopMethod(5) == 1;
+    assert loopMethod(10) == 2;
 
-    assertEquals(1, seriesMethod(5));
-    assertEquals(2, seriesMethod(10));
-    assertEquals(24, seriesMethod(100));
+    assert seriesMethod(5) == 1;
+    assert seriesMethod(10) == 2;
+    assert seriesMethod(100) == 24;
   }
 
   // count = n/5 + n/25 + ... until n
