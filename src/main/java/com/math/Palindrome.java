@@ -1,17 +1,19 @@
 package com.math;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 @SuppressWarnings({"java:S5960", "java:S106"})
 public class Palindrome {
 
   public static void main(String[] args) {
-    palindrome(78987);
-    palindrome(8668);
-    palindrome(8);
-    palindrome(21);
-    palindrome(367);
+    assertThat(isPalindrome(78987)).isTrue();
+    assertThat(isPalindrome(8668)).isTrue();
+    assertThat(isPalindrome(8)).isTrue();
+    assertThat(isPalindrome(21)).isFalse();
+    assertThat(isPalindrome(367)).isFalse();
   }
 
-  static boolean palindrome(int number) {
+  public static boolean isPalindrome(int number) {
     if (number < 0) {
       return false;
     }
@@ -24,11 +26,6 @@ public class Palindrome {
       reversedNumber = reversedNumber * 10 + number % 10;
       number = number / 10;
     }
-    System.out.print(originalNumber);
-    System.out.print("-");
-    System.out.print(reversedNumber);
-    System.out.print("-");
-    System.out.println(originalNumber == reversedNumber);
     return originalNumber == reversedNumber;
   }
 }
