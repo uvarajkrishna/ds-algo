@@ -2,14 +2,12 @@
 
 ## Counting Digits
 
-Count the number of digits in a given number.
+**Problem** - Count the number of digits in a given number.
 
-**Algo Tip:** Divide Number by zero until it is equal to zero. Number of time divided will lead to 
+**Tips:** Divide Number by zero until it is equal to zero. Number of time divided will lead to 
 number of digits.
 
-https://github.com/uvarajkrishna/ds-algo/blob/71c8374f87fdd9dae06d15f0c2a1558323109294/src/main/java/com/math/CountDigits.java#L13-L20
-
-
+**Solution** https://github.com/uvarajkrishna/ds-algo/blob/main/src/main/java/com/math/CountDigits.java#L13-L20
 
 ## Palindrome Numbers
 
