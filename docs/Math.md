@@ -7,7 +7,6 @@
 **Tips -** Divide Number by zero until it is equal to zero. Number of time divided will lead to 
 number of digits.
 
-**Solution -** 
 https://github.com/uvarajkrishna/ds-algo/blob/67bd77e5762e2e5befbf58314e8a2b43f2a856be/src/main/java/com/math/CountDigits.java#L13-L20
 
 ## Palindrome Numbers
