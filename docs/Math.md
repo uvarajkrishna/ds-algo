@@ -12,7 +12,18 @@
 **Tips -** Divide Number by 10 until it is equal to zero. Number of times divided will lead to
 number of digits.
 
-https://github.com/uvarajkrishna/ds-algo/blob/67bd77e5762e2e5befbf58314e8a2b43f2a856be/src/main/java/com/math/CountDigits.java#L13-L20
+[CountDigits.java](../src/main/java/com/math/CountDigits.java)
+
+```java
+  private static int countOfDigitsIn(int number) {
+    int count = 0;
+    while (number != 0) {
+      number = number / 10;
+      count++;
+    }
+    return count;
+  }
+```
 
 ## Palindrome Numbers
 
@@ -27,7 +38,7 @@ https://github.com/uvarajkrishna/ds-algo/blob/67bd77e5762e2e5befbf58314e8a2b43f2
 **Tips -** Use divide by 10 approach. But this time use temp variable to store right most number 
 sliced using modulo of ten.
 
-
+[Palindrome.java](../src/main/java/com/math/Palindrome.java)
 ```java
   public static boolean isPalindrome(int number) {
     if (number < 0) {
