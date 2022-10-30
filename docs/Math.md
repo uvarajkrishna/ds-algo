@@ -27,8 +27,24 @@ https://github.com/uvarajkrishna/ds-algo/blob/67bd77e5762e2e5befbf58314e8a2b43f2
 **Tips -** Use divide by 10 approach. But this time use temp variable to store right most number 
 sliced using modulo of ten.
 
-https://github.com/uvarajkrishna/ds-algo/blob/222cbec2851537aad3f358a506730976eac6b19c/src/main/java/com/math/Palindrome.java#L16-L30
 
+```java
+  public static boolean isPalindrome(int number) {
+    if (number < 0) {
+      return false;
+    }
+    if (number < 10) {
+      return true;
+    }
+    int reversedNumber = 0;
+    int originalNumber = number;
+    while (number > 0) {
+      reversedNumber = reversedNumber * 10 + number % 10;
+      number = number / 10;
+    }
+    return originalNumber == reversedNumber;
+  }
+```
 ## Factorial of a Number
 
 ## Trailing Zeros in Factorial
