@@ -1,2 +1,2 @@
 # Data Structures and Algorithms
-[Maths](docs/Math.md)
+[Maths](docs/math/math.md)
