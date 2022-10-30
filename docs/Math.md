@@ -69,8 +69,6 @@ sliced using modulo of ten.
 
 **Iterative Approach**
 
-Time Complexity - θ(N), Auxilary Space Complexity - θ(1)
-
 ```java
   private static int factorialThroughIteration(final int number){
     int factorial=1;
@@ -81,6 +79,10 @@ Time Complexity - θ(N), Auxilary Space Complexity - θ(1)
     }
 
 ```
+
+| Time Complexity |  Auxiliary Space Complexity  |
+|:---------------:|:----------------------------:|
+|      θ(N)       |             θ(1)             |
 
 **Recursive Approach**
 
@@ -94,6 +96,10 @@ Time Complexity - θ(N), Auxilary Space Complexity - θ(1)
     return number*factorialThroughRecursion(number-1);
     }
 ```
+
+| Time Complexity | Auxiliary Space Complexity |
+|:---------------:|:--------------------------:|
+|      θ(N)       |            θ(N)            |
 
 ## Trailing Zeros in Factorial
 
