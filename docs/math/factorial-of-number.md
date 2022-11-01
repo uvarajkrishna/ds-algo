@@ -17,14 +17,13 @@ Find factorial of the given number.
 ### Iterative Approach
 
 ```java
-  private static int factorialThroughIteration(final int number){
-    int factorial=1;
-    for(int i=1;i<=number;i++){
-    factorial=factorial*i;
+  private static int factorialThroughIteration(final int number) {
+    int factorial = 1;
+    for (int i = 1; i <= number; i++) {
+      factorial = factorial * i;
     }
     return factorial;
-    }
-
+  }
 ```
 
 | Time Complexity |  Auxiliary Space Complexity  |
@@ -34,12 +33,12 @@ Find factorial of the given number.
 ### Recursive Approach
 
 ```java
-  private static int factorialThroughRecursion(int number){
-    if(number==0){
-    return 1;
+  private static int factorialThroughRecursion(int number) {
+    if (number == 0) {
+      return 1;
     }
-    return number*factorialThroughRecursion(number-1);
-    }
+    return number * factorialThroughRecursion(number - 1);
+  }
 ```
 
 | Time Complexity | Auxiliary Space Complexity |

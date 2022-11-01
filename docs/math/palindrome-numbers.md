@@ -20,21 +20,21 @@ sliced using modulo of ten.
 ### [Palindrome.java](../../src/main/java/com/math/Palindrome.java)
 
 ```java
-  public static boolean isPalindrome(int number){
-    if(number< 0){
-    return false;
+  public static boolean isPalindrome(int number) {
+    if (number < 0) {
+      return false;
     }
-    if(number< 10){
-    return true;
+    if (number < 10) {
+      return true;
     }
-    int reversedNumber=0;
-    int originalNumber=number;
-    while(number>0){
-    reversedNumber=reversedNumber*10+number%10;
-    number=number/10;
+    int reversedNumber = 0;
+    int originalNumber = number;
+    while (number > 0) {
+      reversedNumber = reversedNumber * 10 + number % 10;
+      number = number / 10;
     }
-    return originalNumber==reversedNumber;
-    }
+    return originalNumber == reversedNumber;
+  }
 ```
 
 ___

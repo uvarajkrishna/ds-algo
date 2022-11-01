@@ -18,20 +18,20 @@ number(n)
 Find factorial and calculate trailing zero by dividing by 10.
 
 ```java
-  private static int loopMethod(final int number){
-    long factorial=1;
-    for(int i=1;i<=number;i++){
-    factorial=factorial*i;
+  private static int loopMethod(final int number) {
+    long factorial = 1;
+    for (int i = 1; i <= number; i++) {
+      factorial = factorial * i;
     }
-    long tempFact=factorial;
-    int trailingZeros=0;
-    while(factorial%10==0){
-    trailingZeros++;
-    factorial=factorial/10;
+    long tempFact = factorial;
+    int trailingZeros = 0;
+    while (factorial % 10 == 0) {
+      trailingZeros++;
+      factorial = factorial / 10;
     }
-    System.out.println(number+" - "+tempFact+" - "+trailingZeros);
+    System.out.println(number + " - " + tempFact + " - " + trailingZeros);
     return trailingZeros;
-    }
+  }
 ```
 
 | Time Complexity |  Auxiliary Space Complexity  |
@@ -58,14 +58,14 @@ Number trailing zeros can be determined by below Legendre’s Formula
 n/5 + n/25 + n/125..... until p^i <= n
 
 ```java
-  private static int seriesMethod(final int number){
-    int count=0;
-    for(int i=5;i<=number;i*=5){
-    count=count+number/i;
+  private static int seriesMethod(final int number) {
+    int count = 0;
+    for (int i = 5; i <= number; i *= 5) {
+      count = count + number / i;
     }
-    System.out.println(number+" - "+"...."+" - "+count);
+    System.out.println(number + " - " + "...." + " - " + count);
     return count;
-    }
+  }
 ```
 
 | Time Complexity |  Auxiliary Space Complexity  |

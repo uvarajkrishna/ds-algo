@@ -19,14 +19,14 @@ number of digits.
 ### [CountDigits.java](../../src/main/java/com/math/CountDigits.java)
 
 ```java
-  private static int countOfDigitsIn(int number){
-    int count=0;
-    while(number!=0){
-    number=number/10;
-    count++;
+  private static int countOfDigitsIn(int number) {
+    int count = 0;
+    while (number != 0) {
+      number = number / 10;
+      count++;
     }
     return count;
-    }
+  }
 ```
 
 ___

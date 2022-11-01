@@ -17,14 +17,14 @@ Divisors always occur in pairs.
 Check if the number is divisible by any number less than n itself.
 
 ```java
-  private static boolean isPrime_naive(final int n){
-    for(int i=2;i<n; i++){
-    if(n%i==0){
-    return false;
-    }
+  private static boolean isPrime_naive(final int n) {
+    for (int i = 2; i < n; i++) {
+      if (n % i == 0) {
+        return false;
+      }
     }
     return true;
-    }
+  }
 ```
 
 | Time Complexity | Auxiliary Space Complexity |
@@ -38,14 +38,14 @@ Because for any number to occur beyond that must have smaller divisor which must
 before square root of n.
 
 ```java
-  private static boolean isPrime_efficient(final int n){
-    for(int i=2;i*i<n; i++){
-    if(n%i==0){
-    return false;
-    }
+  private static boolean isPrime_efficient(final int n) {
+    for (int i = 2; i * i < n; i++) {
+      if (n % i == 0) {
+        return false;
+      }
     }
     return true;
-    }
+  }
 ```
 
 | Time Complexity | Auxiliary Space Complexity |

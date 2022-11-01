@@ -21,24 +21,24 @@ lcm = (a x b)/gcd(a, b)
 ### Method 1 - Naive
 
 ```java
-  private static int lcm_naive(int a,int b){
-    int lcm=a*b;
-    for(int i=Math.max(a,b);i<=lcm;i++){
-    if(i%a==0&&i%b==0){
-    lcm=i;
-    break;
-    }
+  private static int lcm_naive(int a, int b) {
+    int lcm = a * b;
+    for (int i = Math.max(a, b); i <= lcm; i++) {
+      if (i % a == 0 && i % b == 0) {
+        lcm = i;
+        break;
+      }
     }
     return lcm;
-    }
+  }
 ```
 
 ### Method 2 - Formula
 
 ```java
-  private static int lcm_formula(int a,int b){
-    return a*b/gcd_euclids_improved(a,b);
-    }
+  private static int lcm_formula(int a, int b) {
+    return a * b / gcd_euclids_improved(a, b);
+  }
 ```
 
 |  Time Complexity  | Auxiliary Space Complexity |
