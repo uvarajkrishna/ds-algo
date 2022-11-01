@@ -41,6 +41,11 @@ lcm = (a x b)/gcd(a, b)
     }
 ```
 
+|  Time Complexity  | Auxiliary Space Complexity |
+|:-----------------:|:--------------------------:|
+| O(log(min(a, b))) |     O(log(min(a, b)))      |
+
+Complexity is same as GCD method used.
 ___
 
 * [Math - Home](math.md)
