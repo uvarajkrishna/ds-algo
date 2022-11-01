@@ -43,7 +43,7 @@ public class Gcd {
     return a;
   }
 
-  private static int gcd_euclids_improved(int a, int b) {
+  public static int gcd_euclids_improved(int a, int b) {
     if (b == 0) {
       return a;
     }
