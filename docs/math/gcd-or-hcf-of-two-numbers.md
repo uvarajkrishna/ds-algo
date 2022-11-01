@@ -1,5 +1,11 @@
 # GCD or HCF of Two Numbers
 
+## Problem
+
+## Tips
+
+## Solution
+
 ___
 
 * [Math - Home](math.md)

@@ -1,5 +1,11 @@
 # Prime Factors
 
+## Problem
+
+## Tips
+
+## Solution
+
 ___
 
 * [Math - Home](math.md)

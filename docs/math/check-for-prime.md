@@ -1,5 +1,11 @@
 # Check for Prime
 
+## Problem
+
+## Tips
+
+## Solution
+
 ___
 
 * [Math - Home](math.md)

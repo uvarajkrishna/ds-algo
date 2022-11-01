@@ -1,5 +1,11 @@
 # All Divisors of a Number
 
+## Problem
+
+## Tips
+
+## Solution
+
 ___
 
 * [Math - Home](math.md)
