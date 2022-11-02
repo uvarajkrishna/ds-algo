@@ -1,5 +1,6 @@
 package com.math;
 
+@SuppressWarnings({"java:S5960", "java:S106"})
 public class AllDivisors {
 
   public static void main(String[] args) {

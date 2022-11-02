@@ -3,6 +3,7 @@ package com.math;
 import static com.math.Gcd.gcd_euclids_improved;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@SuppressWarnings({"java:S5960", "java:S106"})
 public class Lcm {
 
   public static void main(String[] args) {

@@ -2,6 +2,7 @@ package com.math;
 
 import java.util.Arrays;
 
+@SuppressWarnings({"java:S5960", "java:S106"})
 public class SieveOfEratosthenes {
 
   public static void main(String[] args) {

@@ -1,21 +1,20 @@
-# Prime Factors
+package com.math;
 
-## Problem
+import static org.assertj.core.api.Assertions.assertThat;
 
-Prime factorization is a way of expressing a number as a product of its prime factors. A prime
-number is a number that has exactly two factors, 1 and the number itself. For example, if we take
-the number 30. We know that 30 = 5 × 6, but 6 is not a prime number. The number 6 can further be
-factorized as 2 × 3, where 2 and 3 are prime numbers. Therefore, the prime factorization of 30 = 2 ×
-3 × 5, where all the factors are prime numbers.
+@SuppressWarnings({"java:S5960", "java:S106"})
+public class PrimeFactors {
 
-![prime-factors.png](prime-factors.png)
+  public static void main(String[] args) {
+    assertThat(primeFactors_division(40)).isEqualToIgnoringCase("2 2 2 5");
+    assertThat(primeFactors_division(139)).isEqualToIgnoringCase("139");
+    assertThat(primeFactors_division(450)).isEqualToIgnoringCase("2 3 3 5 5");
 
-## Solution
+    assertThat(primeFactors_division_efficient(40)).isEqualToIgnoringCase("2 2 2 5");
+    assertThat(primeFactors_division_efficient(139)).isEqualToIgnoringCase("139");
+    assertThat(primeFactors_division_efficient(450)).isEqualToIgnoringCase("2 3 3 5 5");
+  }
 
-### [PrimeFactors.java](../../src/main/java/com/math/PrimeFactors.java)
-
-### Method 1
-```java
   public static String primeFactors_division(int n) {
     System.out.print(n + " - ");
     StringBuilder builder = new StringBuilder();
@@ -32,14 +31,8 @@ factorized as 2 × 3, where 2 and 3 are prime numbers. Therefore, the prime fact
     System.out.println(factors);
     return factors;
   }
-```
-| Time Complexity  | Auxiliary Space Complexity |
-|:----------------:|:--------------------------:|
-| O(sqrt(n)log(n)) |            O(1)            |
 
-### Method 2 - Efficient
-```java
-public static String primeFactors_division_efficient(int n) {
+  public static String primeFactors_division_efficient(int n) {
     System.out.print(n + " - ");
     StringBuilder builder = new StringBuilder();
 
@@ -71,13 +64,4 @@ public static String primeFactors_division_efficient(int n) {
     System.out.println(factors);
     return factors;
   }
-```
-| Time Complexity  | Auxiliary Space Complexity |
-|:----------------:|:--------------------------:|
-| O(sqrt(n)log(n)) |            O(1)            |
-
-
-___
-
-* [Math - Home](math.md)
-* [DS Algo Home](../../README.md)
+}

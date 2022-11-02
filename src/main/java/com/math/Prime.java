@@ -2,6 +2,7 @@ package com.math;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@SuppressWarnings({"java:S5960", "java:S106"})
 public class Prime {
 
   public static void main(String[] args) {
