@@ -12,6 +12,10 @@ public class Prime {
     assertThat(isPrime_efficient(13)).isTrue();
     assertThat(isPrime_efficient(139)).isTrue();
     assertThat(isPrime_efficient(138)).isFalse();
+
+    assertThat(isPrime_ultraEfficient(13)).isTrue();
+    assertThat(isPrime_ultraEfficient(139)).isTrue();
+    assertThat(isPrime_ultraEfficient(138)).isFalse();
   }
 
   private static boolean isPrime_naive(final int n) {
