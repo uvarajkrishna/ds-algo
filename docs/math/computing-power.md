@@ -30,10 +30,16 @@ $x^n$ can be represented as $x^\frac{n}{2} * x^\frac{n}{2}$ for even n and
 $x * x^\frac{n}{2} * x^\frac{n}{2}$ for odd n.
 
 ```java
-  private static int power_naive(int x, int n) {
-    int power = 1;
-    for (int i = 0; i < n; i++) {
-      power = power * x;
+  private static int power_recursive(int x, int n) {
+    if (n == 0) {
+      return 1;
+    }
+    int powerNby2 = power_recursive(x, n / 2);
+    int power;
+    if (n % 2 == 0) {
+      power = powerNby2 * powerNby2;
+    } else {
+      power = x * powerNby2 * powerNby2;
     }
     System.out.println(x + "^" + n + "=" + power);
     return power;
