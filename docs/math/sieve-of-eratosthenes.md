@@ -61,6 +61,9 @@ isn't divisible by any smaller prime number and therefore has to be prime.
   }
 ```
 
+|   Time Complexity   | Auxiliary Space Complexity |
+|:-------------------:|:--------------------------:|
+|      O(n*loglog(n)) |            θ(n)            |
 ___
 
 * [Math - Home](math.md)
