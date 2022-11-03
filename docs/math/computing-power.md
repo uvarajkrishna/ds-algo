@@ -26,7 +26,7 @@ Given numbers x and n, compute the x to the power of n.
 
 ### Method 2 - Even Odd
 
-$x^n$ can be represented as $x^(n/2)*x^(n/2)$ for even n and $x*x^(n/2)*x^(n/2)$ for odd n.
+$x^n$ can be represented as $x^(n/2) * x^(n/2)$ for even n and $x * x^(n/2) * x^(n/2)$ for odd n.
 
 ```java
   private static int power_naive(int x, int n) {
