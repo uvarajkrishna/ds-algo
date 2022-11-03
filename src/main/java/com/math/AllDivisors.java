@@ -14,29 +14,30 @@ public class AllDivisors {
   //O(sqrt(n))
   private static String allDivisors_optimized(final int number) {
     int i;
-    String output = "";
+    StringBuilder builder = new StringBuilder();
     for (i = 1; i * i < number; i++) {
       if (number % i == 0) {
         if (i == 1) {
-          output = output + i;
+          builder.append(i);
         } else {
-          output = output + "," + i;
+          builder.append(",").append(i);
         }
       }
     }
     for (; i >= 1; i--) {
       if (number % i == 0) {
-        output = output + "," + number / i;
+        builder.append(",").append(number / i);
       }
     }
-    System.out.println(output);
-    return output;
+    String divisors = builder.toString();
+    System.out.println(divisors);
+    return divisors;
   }
 
 
   //O(N/2)
   private static String allDivisors_own(final int number) {
-    String output = "";
+
     int outLength = number / 2;
     int[] outputArr = new int[outLength];
 
@@ -53,6 +54,7 @@ public class AllDivisors {
       }
     }
 
+    String output = "";
     for (int i = 0; i < outputArr.length; i++) {
       if (i == 0) {
         output = output + outputArr[i];

@@ -50,7 +50,7 @@ before square root of n.
 
 | Time Complexity | Auxiliary Space Complexity |
 |:---------------:|:--------------------------:|
-|   O(sqrt(n))    |            O(1)            |
+|   O(√n)    |            O(1)            |
 
 ### Method 3 - More Efficient
 
@@ -94,7 +94,7 @@ starting with 5.
 
 | Time Complexity | Auxiliary Space Complexity |
 |:---------------:|:--------------------------:|
-|   O(sqrt(n))    |            O(1)            |
+|      O(√n)      |            O(1)            |
 
 ___
 

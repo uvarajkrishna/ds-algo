@@ -35,7 +35,7 @@ factorized as 2 × 3, where 2 and 3 are prime numbers. Therefore, the prime fact
 ```
 | Time Complexity  | Auxiliary Space Complexity |
 |:----------------:|:--------------------------:|
-| O(sqrt(n)log(n)) |            O(1)            |
+| O(√nlog(n)) |            O(1)            |
 
 ### Method 2 - Efficient
 ```java
@@ -74,7 +74,7 @@ public static String primeFactors_division_efficient(int n) {
 ```
 | Time Complexity  | Auxiliary Space Complexity |
 |:----------------:|:--------------------------:|
-| O(sqrt(n)log(n)) |            O(1)            |
+| O(√nlog(n)) |            O(1)            |
 
 
 ___
