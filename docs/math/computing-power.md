@@ -42,7 +42,7 @@ $x * x^\frac{n}{2} * x^\frac{n}{2}$ for odd n.
 
 | Time Complexity | Auxiliary Space Complexity |
 |:---------------:|:--------------------------:|
-|   θ($log(n)$)   |            θ(1)            |
+|   θ(log(n))    |            θ(1)            |
 
 ___
 
