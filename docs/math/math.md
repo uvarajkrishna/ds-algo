@@ -11,8 +11,6 @@
 9. [x] [Prime Factors](prime-factors.md)
 10. [x] [Sieve of Eratosthenes](sieve-of-eratosthenes.md)
 11. [x] [Computing Power](computing-power.md)
-12. [ ] [Iterative Power](iterative-power.md)
-
 ___
 
 * [DS Algo Home](../../README.md)
